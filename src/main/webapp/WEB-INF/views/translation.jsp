@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>User Home Page</title>
+<title>Translated Text</title>
 </head>
 <body>
-	<h3>Hi ${userName}</h3>
+	<h3>The text in English: ${textToBeTranslated}</h3>
+	<h3>The text in Groefnish: ${textTranslated}</h3>
+	jklfjadls;kf
+
 </body>
 </html>
