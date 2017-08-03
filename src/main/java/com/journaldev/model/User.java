@@ -1,4 +1,4 @@
-package com.journaldev.domain;
+package com.journaldev.model;
 
 public class User {
 

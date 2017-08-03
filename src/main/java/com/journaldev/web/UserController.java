@@ -6,7 +6,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.journaldev.domain.User;
+import com.journaldev.model.User;
 
 @Controller
 public class UserController {

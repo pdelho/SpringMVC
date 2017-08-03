@@ -13,7 +13,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.journaldev.domain.Translation;
+import com.journaldev.model.Translation;
 
 /**
  * Handles requests for the application home page.
