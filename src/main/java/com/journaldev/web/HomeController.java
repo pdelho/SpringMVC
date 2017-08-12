@@ -13,7 +13,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.journaldev.model.Translation;
+import com.journaldev.service.Translation;
 
 /**
  * Handles requests for the application home page.
@@ -44,7 +44,8 @@ public class HomeController {
 	public String translation(@Validated Translation translation, Model model) {
 		logger.info("The text to be translated is {}.",translation.getTranslation());
 		model.addAttribute("textToBeTranslated", translation.getTranslation());
-		model.addAttribute("textTranslated", translation.translateToGroefnish());
+		String textTranslated = translation.translateToGroefnish();
+		model.addAttribute("textTranslated", textTranslated);
 		return "translation";
 	}
 
