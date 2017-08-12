@@ -6,6 +6,8 @@
 </head>
 <body>
 	<a class="active" href="<c:url value="/login"/>">Login</a>
+	<a class="active" href="<c:url value="/register"/>">Register</a>
+	<a class="active" href="<c:url value="/persons"/>">Persons</a>
 	<h1>Hello world!</h1>
 
 	<P>The time on the server is ${serverTime}.</P>

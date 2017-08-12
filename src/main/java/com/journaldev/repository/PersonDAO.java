@@ -10,5 +10,5 @@ public interface PersonDAO {
 
 	public List<Person> getPersonList();
 
-    public void saveProduct(Person person);
+    public void savePerson(Person person);
 }

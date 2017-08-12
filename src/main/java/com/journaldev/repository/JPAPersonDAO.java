@@ -30,8 +30,8 @@ public class JPAPersonDAO implements PersonDAO{
 	}
 
     @Transactional(readOnly = false)
-	public void saveProduct(Person person) {
-    	em.merge(person);	
+	public void savePerson(Person person) {
+    	em.merge(person);
 	}
 	
 	

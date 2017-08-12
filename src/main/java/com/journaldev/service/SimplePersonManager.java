@@ -29,6 +29,13 @@ public class SimplePersonManager implements PersonManager {
 	}
 
 
+	@Override
+	public void saverPerson(Person person) {
+		personDAO.savePerson(person);
+		
+	}
+
+
 
 
 }

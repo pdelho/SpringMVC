@@ -1,5 +1,5 @@
 CREATE TABLE persons (
-    id BIGINT PRIMARY KEY     NOT NULL,
+    id SERIAL PRIMARY KEY,
     firstname VARCHAR(20),
     lastname VARCHAR(20),
     description VARCHAR(100),
