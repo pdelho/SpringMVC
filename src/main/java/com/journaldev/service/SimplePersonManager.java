@@ -24,7 +24,6 @@ public class SimplePersonManager implements PersonManager {
 	 }
 
 
-	@Override
 	public List<Person> getPersons() {
 		return personDAO.getPersonList(); 
 	}
