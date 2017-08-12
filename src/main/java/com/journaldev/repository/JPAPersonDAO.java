@@ -5,10 +5,12 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.journaldev.model.Person;
 
+@Repository(value = "personDAO")
 public class JPAPersonDAO implements PersonDAO{
 	
     private EntityManager em = null;
@@ -24,7 +26,7 @@ public class JPAPersonDAO implements PersonDAO{
     @Transactional(readOnly = true)
     @SuppressWarnings("unchecked")
 	public List<Person> getPersonList() {
-    	return em.createQuery("select p from Person p order by p.id").getResultList();
+    	return em.createQuery("SELECT p FROM Person p").getResultList();
 	}
 
     @Transactional(readOnly = false)
