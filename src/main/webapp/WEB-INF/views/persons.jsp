@@ -13,6 +13,9 @@
 			<i><c:out value="${person.firstName}" /></i>
 			<c:out value="${person.lastName}" />
 			<c:out value="${person.description}" />
+			<a href="<c:url value="/person/${person.id}"/>">Update</a>
+			<a href="<c:url value="/delete/${person.id}"/>">Delete</a>
+			<br>
 			<br>
 		</c:if>
 	</c:forEach>

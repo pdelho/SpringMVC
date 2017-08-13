@@ -24,16 +24,25 @@ public class JPAPersonDAO implements PersonDAO{
     }
 
     @Transactional(readOnly = true)
+	public Person getPersonById(long id) {
+		return em.find(Person.class, id);
+	}
+    
+    @Transactional(readOnly = true)
     @SuppressWarnings("unchecked")
 	public List<Person> getPersonList() {
-    	return em.createQuery("SELECT p FROM Person p").getResultList();
+    	return em.createQuery("SELECT p FROM Person p ORDER BY p.id").getResultList();
 	}
 
     @Transactional(readOnly = false)
 	public void savePerson(Person person) {
     	em.merge(person);
 	}
-	
-	
+
+    @Transactional(readOnly = false)
+	public void deletePerson(Person person) {
+    	// If we don't merge first, it has a temporal transactional object
+		em.remove(em.merge(person));	
+	}
 
 }

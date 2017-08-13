@@ -24,18 +24,26 @@ public class SimplePersonManager implements PersonManager {
 	 }
 
 
+	 @Override
+	 public Person getPersonById(long id) {
+		 return personDAO.getPersonById(id);
+	 }
+
 	public List<Person> getPersons() {
 		return personDAO.getPersonList(); 
 	}
 
 
 	@Override
-	public void saverPerson(Person person) {
+	public void savePerson(Person person) {
 		personDAO.savePerson(person);
 		
 	}
 
-
-
+	@Override
+	public void deletePerson(Person person) {
+		personDAO.deletePerson(person);
+		
+	}
 
 }
