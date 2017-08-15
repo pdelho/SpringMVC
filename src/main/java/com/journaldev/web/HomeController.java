@@ -19,7 +19,7 @@ import com.journaldev.service.Translation;
 /**
  * Handles requests for the application home page.
  */
-@Controller("/")
+@Controller
 public class HomeController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
@@ -37,7 +37,7 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 
 		model.addAttribute("serverTime", formattedDate );
-		return "home";
+		return "index";
 	}
 
 	
@@ -48,10 +48,8 @@ public class HomeController {
 		String textTranslated = translation.translateToGroefnish();
 		model.addAttribute("textTranslated", textTranslated);
 		
-		return "translation";
+		return "home/translation";
 	}
-
-
 
 
 }

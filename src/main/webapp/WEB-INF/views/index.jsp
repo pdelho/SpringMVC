@@ -5,8 +5,7 @@
 <title>Home</title>
 </head>
 <body>
-	<a class="active" href="<c:url value="/login"/>">Login</a>
-	<a class="active" href="<c:url value="/person/add"/>">Add</a>
+	
 	<a class="active" href="<c:url value="/persons"/>">Persons</a>
 	<h1>Hello world!</h1>
 

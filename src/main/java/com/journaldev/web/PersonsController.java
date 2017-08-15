@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.journaldev.model.Person;
 import com.journaldev.service.PersonManager;
 
-@Controller("/person")
+@Controller
 public class PersonsController {
 
 	@Autowired
@@ -29,7 +29,7 @@ public class PersonsController {
 	public String persons(Model model) {		
 		List<Person> persons = personManager.getPersons();
 		model.addAttribute("persons", persons);
-		return "persons";
+		return "person/all";
 
 	}
 
@@ -41,7 +41,7 @@ public class PersonsController {
 	 */
 	@RequestMapping(value = "/person/add", method = RequestMethod.GET)
 	public String add(Model model) {
-		return "add";
+		return "person/add";
 
 	}
 
@@ -75,28 +75,28 @@ public class PersonsController {
 		// Get all persons and render them
 		List<Person> persons = personManager.getPersons();
 		model.addAttribute("persons", persons);
-		return "persons";
+		return "person/all";
 
 	}
 
-	// To update or read a person, first we get a form with the data of the user
+	// To update or read a person, first we get a form with the details of the person
 	@RequestMapping(value = "/person/{id}", method = RequestMethod.GET)
 	public String personForm(@PathVariable int id, Model model) {
 		Person existingPerson = personManager.getPersonById(id);
 		model.addAttribute("person", existingPerson);
-		return "person";
+		return "person/details";
 
 	}
 	
 	// To delete a person
-	@RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/person/delete/{id}", method = RequestMethod.GET)
 	public String personDeleteForm(@PathVariable int id, Model model) {
 		Person deletedPerson = personManager.getPersonById(id);
 		personManager.deletePerson(deletedPerson);
 		// Get all persons and render them
 		List<Person> persons = personManager.getPersons();
 		model.addAttribute("persons", persons);
-		return "persons";
+		return "person/all";
 
 	}
 }

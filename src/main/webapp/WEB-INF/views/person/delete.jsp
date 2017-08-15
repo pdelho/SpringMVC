@@ -6,8 +6,8 @@
 <title>Delete Person</title>
 </head>
 <body>
-<spring:url value="/delete" var="personUpdateUrl" />
-	<form action="${personUpdateUrl}" method="post">
+<spring:url value="/person/delete" var="personDeleteUrl" />
+	<form action="${personDeleteUrl}" method="post">
 		<input type="hidden" name="id" value="${person.id}">
 		First Name: <input type="text" name="firstName" value = "${person.firstName}"><br>
 		Last Name: <input type="text" name="lastName" value = "${person.lastName}"><br>
