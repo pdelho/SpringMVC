@@ -40,7 +40,7 @@ public class PersonsController {
 	 * @return
 	 */
 	@RequestMapping(value = "/person/add", method = RequestMethod.GET)
-	public String add(Model model) {
+	public String addPerson(Model model) {
 		return "person/add";
 
 	}
@@ -52,7 +52,7 @@ public class PersonsController {
 	 * @return
 	 */
 	@RequestMapping(value = "/person", method = RequestMethod.POST)
-	public String saveperson(@Validated Person person, Model model) {
+	public String savePerson(@Validated Person person, Model model) {
 
 		boolean existPerson;
 		if (personManager.getPersonById(person.getId()) == null) existPerson = false;

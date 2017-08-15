@@ -4,4 +4,4 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<a class="active" href="<c:url value="/"/>">Home</a><br>
+<!DOCTYPE html>

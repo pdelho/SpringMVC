@@ -16,9 +16,6 @@
 	    <!-- Custom styles for this template -->
 	    <link href="/SpringMVCHibernate/resources/css/modern-business.css" rel="stylesheet">
 	    
-	    <!-- Form CSS -->
-	    <link href="/SpringMVCHibernate/resources/css/form.css" rel="stylesheet">
-	    
 	    
 	    <!-- Bootstrap core JavaScript -->
 	    <script src="/SpringMVCHibernate/resources/vendor/jquery/jquery.min.js"></script>
@@ -52,8 +49,8 @@
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                         <!-- <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
                         <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a> -->
-                        <a class="dropdown-item" href="<spring:url value ="/translate-groefnish"/>">Groefnish Translate</a>
-                        <a class="dropdown-item active" href="<spring:url value ="/persons"/>">List of citizens</a>
+                        <a class="dropdown-item active" href="<spring:url value ="/translate-groefnish"/>">Groefnish Translate</a>
+                        <a class="dropdown-item" href="<spring:url value ="/persons"/>">List of citizens</a>
                         <!-- <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a> -->
                     </div>
                 </li>
@@ -77,37 +74,31 @@
     <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
-        <h1 class="mt-4 mb-3">List of Citizens <small>in Groefnia</small></h1>
+        <h1 class="mt-4 mb-3">Translate <small>Groefnish</small></h1>
 
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
                 <a  href="<spring:url value ="/"/>">Home</a>
             </li>
-            <li class="breadcrumb-item active"><a href="<spring:url value ="/persons"/>">List of citizens</a></li>
+            <li class="breadcrumb-item active">Groefnish Translator</li>
         </ol>
 
         <!-- Intro Content -->
         <div class="row">
-	        <spring:url value="/person" var="userActionUrl" />
-        	<form action="${userActionUrl}" method="post">
-	            <label for="first_name">First name</label>
-		        <p align ="right"><input type="text" name="firstName" placeholder="Pablo"  /></p>
-
-		        <label for="last_name">Last name</label>
-		        <p align ="right"><input type="text" name="lastName" placeholder="del Hoyo" />  </p>    
-
-		        <label for="age">Age <span class="req"></span></label>
-		           <p align ="right"><input type="number" name="age" placeholder="25" /></p>
-		              
-		       <div class="divider"></div>
-
-		       <label for="comments">Description</label>
-		       <textarea cols="50" rows="4" name="description"></textarea>
-		       
-		          <input class="btn btn-primary" type="submit" value="Submit" />
-		          <small>or press <strong>enter</strong></small>
-		    </form>  
-            
+            <div class="col-lg-6">
+                <form action="translation" method="post">
+                <textarea rows="4" cols="50" name="translation"></textarea>
+				<input type="submit" class="btn btn-primary" value="Translate something to Groefnish!">
+				</form>
+				
+            </div>
+            <div class="col-lg-6">
+                <h2>About Gorefnish</h2>
+                <p>Groefnish is a easy (but secret!) language to learn.</p>
+                <p>To write it properly, include the particle 'nuf' after any vowel of a word</p>
+                <p>Example: hello - he<b>nuf</b>llo<b>nuf</b></p>
+                <p>The language you translate the word from is not importan, oke? This is just Gorefnish!</p>
+            </div>
         </div>
         <!-- /.row -->
 
