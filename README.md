@@ -48,7 +48,7 @@ This app uses a number of open source projects to work properly:
 * [Heroku](https://www.heroku.com/)-PaaS
 
 
-The code is open for your acces in the [public repository][dill] on GitHub.
+The code is open for your acces in the [public repository](https://github.com/pdelho/SpringMVC) on GitHub.
 
 ### Installation
 
