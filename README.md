@@ -16,6 +16,7 @@ This application is a cloud-enabled, mobile-ready, persistent remote storage bas
   - Navbar template
   - Small issues with context application in local/remote fixed
   - .bat to set remote environment
+  - Index page completed
 
 
 You can also:
@@ -140,6 +141,8 @@ http://your-app-name.herokuapp.com/
  - Postgresql with two tables
  - CV
  - Request DELETE: https://stackoverflow.com/questions/13629653/using-put-and-delete-methods-in-spring-mvc
+ - Ajax to handle translation
+ - Javascript google maps functionality: how far are you from groefnia?
 
 
 

@@ -16,10 +16,6 @@
 	<!-- Navigation --> 
     <%@ include file="/WEB-INF/views/common/navbar.jsp"%>
     
-    <h1>Welcome to my Webpage</h1>
-    Cool information about myself and Groefnia!<br>
-    Spring and Bootstrap and PostgreSql<br>
-    
  <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -29,24 +25,24 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+                <div class="carousel-item active" style="background-image: url('<%=request.getContextPath()%>/resources/images/groefnia_1.jpg')">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>First Slide</h3>
-                        <p>This is a description for the first slide.</p>
+                        <h3>Groefnia</h3>
+                        <p>Capital of the Balkans</p>
                     </div>
                 </div>
                 <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                <div class="carousel-item" style="background-image: url('<%=request.getContextPath()%>/resources/images/groefnia_2.jpg')">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Second Slide</h3>
-                        <p>This is a description for the second slide.</p>
+                        <h3 style="backcolor:#000000">Land for ships</h3>
+                        <p style="color:#FFFFFF">Buenos, bonitos, pero no baratos</p>
                     </div>
                 </div>
                 <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                <div class="carousel-item" style="background-image: url('<%=request.getContextPath()%>/resources/images/groefnia_3.jpg')">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Third Slide</h3>
-                        <p>This is a description for the third slide.</p>
+                        <h3 style="color:#000000">Learn Programming</h3>
+                        <p style="color:#000000">SpringMVC, frontend, Postgresql...</p>
                     </div>
                 </div>
             </div>
@@ -64,15 +60,29 @@
     <!-- Page Content -->
     <div class="container">
 
-        <h1 class="my-4">Welcome to Modern Business</h1>
+        <h1 class="my-4">Welcome to DelHoyo webpage!</h1>
 
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-4 mb-4">
                 <div class="card h-100">
-                    <h4 class="card-header">Card Title</h4>
+                    <h4 class="card-header">Groefnia</h4>
                     <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                        <p class="card-text">This amazing <del>imaginary</del> European country is situated in the heart of the Balkan.
+                        Groefnia has plenty of fantastic attractions and unique sights to offer.
+                        Its peopleS are very kind and hospitable with everybody. Well, maybe not with Spaniards. 
+                        But we enjoy the Fridays because here it's always Friday. See the projects and help us the make Groefnia great for once!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="<spring:url value ="/translate-groefnish"/>" class="btn btn-primary">Learn Groefnish now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <h4 class="card-header">Programming</h4>
+                    <div class="card-body">
+                        <p class="card-text">I'm developing this website just for fun. Don't take it seriously. But is a funny way to learn programming: front-end, back-end, databases... You have the repository in my GitHub, feel free to copy it!</p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary">Learn More</a>
@@ -81,23 +91,13 @@
             </div>
             <div class="col-lg-4 mb-4">
                 <div class="card h-100">
-                    <h4 class="card-header">Card Title</h4>
+                    <h4 class="card-header">Contact</h4>
                     <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
+                        <p class="card-text">You can send me your doubts in the contact section. Your comments are welcomed as well!
+                        For any official issue you should contact the Groefnia embassy</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <h4 class="card-header">Card Title</h4>
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="<spring:url value ="/contact"/>" class="btn btn-primary">Contact</a>
                     </div>
                 </div>
             </div>
@@ -105,63 +105,42 @@
         <!-- /.row -->
 
         <!-- Portfolio Section -->
-        <h2>Portfolio Heading</h2>
+        <h2>What are we proud of</h2>
 
         <div class="row">
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="<%=request.getContextPath()%>/resources/images/airport.jpg" alt=""></a>
                     <div class="card-body">
-                        <h4 class="card-title"><a href="#">Project One</a></h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+                        <h4 class="card-title"><a href="#">The Airport</a></h4>
+                        <p class="card-text">So far our airport has no planes, but it's beautiful. We are trying hard with Ryanair
+                        so that they schedule some cheap flights, connecting Groefcelona with Amsterdam, Düsseldorf and Brussels Zaventem in high season for just 65 euros!!!</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="<%=request.getContextPath()%>/resources/images/harbour.jpg" alt=""></a>
                     <div class="card-body">
-                        <h4 class="card-title"><a href="#">Project Two</a></h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        <h4 class="card-title"><a href="#">The Harbour</a></h4>
+                        <p class="card-text">We like very much the barcos, joder!. If you don't have one maybe you should buy it here. Our harbour it's the best storefront for the most 
+                        awesome and expensive ships in the world!</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="<%=request.getContextPath()%>/resources/images/eurovision.jpg" alt=""></a>
                     <div class="card-body">
-                        <h4 class="card-title"><a href="#">Project Three</a></h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+                        <h4 class="card-title"><a href="#">Eurovision and Sports</a></h4>
+                        <p class="card-text">The whole country stops for the most important event of the year. We have won Eurovison 5 times and we are proud of it
+                        Our Groefcelona football club also have won 1 Europe League</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Project Four</a></h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Project Five</a></h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Project Six</a></h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-                    </div>
-                </div>
-            </div>
+            
+            
+            
         </div>
         <!-- /.row -->
 
@@ -178,7 +157,7 @@
                     <li>Working contact form with validation</li>
                     <li>Unstyled page elements for easy customization</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+                <p>Consult this template in the Other Pages section</p>
             </div>
             <div class="col-lg-6">
                 <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
@@ -191,7 +170,7 @@
         <!-- Call to Action Section -->
         <div class="row mb-4">
             <div class="col-md-8">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                <p>This webpage was built using SpringMVC</p>
             </div>
             <div class="col-md-4">
                 <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
