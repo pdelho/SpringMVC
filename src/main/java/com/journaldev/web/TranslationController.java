@@ -15,6 +15,12 @@ public class TranslationController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(NavigationController.class);
 	
+	@RequestMapping(value = "/translate-groefnish", method = RequestMethod.GET)
+	public String translation(Model model) {
+		return "groefnia/translation/input";
+
+	}
+	
 	@RequestMapping(value = "/translation", method = RequestMethod.POST)
 	public String translation(@Validated Translation translation, Model model) {
 		logger.info("The text to be translated is {}.",translation.getTranslation());
@@ -22,7 +28,7 @@ public class TranslationController {
 		String textTranslated = translation.translateToGroefnish();
 		model.addAttribute("textTranslated", textTranslated);
 		
-		return "translation/result";
+		return "groefnia/translation/result";
 	}
 
 }

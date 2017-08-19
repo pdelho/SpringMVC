@@ -13,6 +13,9 @@ This application is a cloud-enabled, mobile-ready, persistent remote storage bas
 # New Features!
 
   - Bootsrap framework
+  - Navbar template
+  - Small issues with context application in local/remote fixed
+  - .bat to set remote environment
 
 
 You can also:
@@ -130,7 +133,6 @@ http://your-app-name.herokuapp.com/
 
  - Write MORE Tests
  - Add Night Mode
- - NavBar template: https://stackoverflow.com/questions/17017572/highlighting-current-page-link-using-jsp
  - Validation
  - jQuey Exercises
  - AngularJS Exercises

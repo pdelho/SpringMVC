@@ -29,7 +29,7 @@ public class PersonsController {
 	public String persons(Model model) {		
 		List<Person> persons = personManager.getPersons();
 		model.addAttribute("persons", persons);
-		return "person/all";
+		return "groefnia/person/all";
 
 	}
 
@@ -41,7 +41,7 @@ public class PersonsController {
 	 */
 	@RequestMapping(value = "/person/add", method = RequestMethod.GET)
 	public String addPerson(Model model) {
-		return "person/add";
+		return "groefnia/person/add";
 
 	}
 
@@ -75,7 +75,7 @@ public class PersonsController {
 		// Get all persons and render them
 		List<Person> persons = personManager.getPersons();
 		model.addAttribute("persons", persons);
-		return "person/all";
+		return "groefnia/person/all";
 
 	}
 
@@ -84,7 +84,7 @@ public class PersonsController {
 	public String personForm(@PathVariable int id, Model model) {
 		Person existingPerson = personManager.getPersonById(id);
 		model.addAttribute("person", existingPerson);
-		return "person/details";
+		return "groefnia/person/details";
 
 	}
 	
@@ -96,7 +96,7 @@ public class PersonsController {
 		// Get all persons and render them
 		List<Person> persons = personManager.getPersons();
 		model.addAttribute("persons", persons);
-		return "person/all";
+		return "groefnia/person/all";
 
 	}
 }
