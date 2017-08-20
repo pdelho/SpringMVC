@@ -13,15 +13,14 @@ This application is a cloud-enabled, mobile-ready, persistent remote storage bas
 # New Features!
 
   - Bootsrap framework
-  - Navbar template
   - Small issues with context application in local/remote fixed
-  - .bat to set remote environment
   - Index page completed
+  - Some jQuery exercises included
 
 
 You can also:
   - Read information about Groefnia, an ~~imaginary~~ amazing country of Europe
-  - Register as a Gorefnish citizen, read, update or delete your information ([CRUD] functionalities in a persistant database)
+  - Register as a Gorefnish citizen, read, update or delete your information ([CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) functionalities in a persistant database)
   - Send a form to contact me or know where do I live
   - Visit other cool websites
 
@@ -135,7 +134,6 @@ http://your-app-name.herokuapp.com/
  - Write MORE Tests
  - Add Night Mode
  - Validation
- - jQuey Exercises
  - AngularJS Exercises
  - Travelmap
  - Postgresql with two tables
@@ -154,11 +152,5 @@ MIT
 
 
 **Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-
-   [crud]: <https://en.wikipedia.org/wiki/Create,_read,_update_and_delete>
- 
 
 
