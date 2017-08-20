@@ -7,7 +7,10 @@
             <ul class="navbar-nav ml-auto">
                 <%-- <li class="nav-item<%=request.getRequestURI().endsWith("/about.jsp") ? " active " : " " %>">
                     <a class="nav-link" href="<spring:url value ="/about"/>">About</a>
-                </li> --%>          
+                </li> --%>         
+                <li class="nav-item<%=request.getRequestURI().endsWith("/cv.jsp") ? " active " : " " %>">
+                    <a class="nav-link" href="<spring:url value ="/cv"/>">CV</a>
+                </li> 
                 <li class="nav-item<%=request.getRequestURI().endsWith("/contact.jsp") ? " active " : " " %>">
                     <a class="nav-link" href="<spring:url value ="/contact"/>">Contact</a>
                 </li>

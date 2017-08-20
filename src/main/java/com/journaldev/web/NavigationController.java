@@ -50,5 +50,11 @@ public class NavigationController {
 		return "contact";
 
 	}
+	
+	@RequestMapping(value = "/cv", method = RequestMethod.GET)
+	public String cv(Model model) {
+		return "cv";
+
+	}
 
 }

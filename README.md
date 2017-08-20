@@ -16,6 +16,7 @@ This application is a cloud-enabled, mobile-ready, persistent remote storage bas
   - Small issues with context application in local/remote fixed
   - Index page completed
   - Some jQuery exercises included
+  - CV
 
 
 You can also:
@@ -137,7 +138,6 @@ http://your-app-name.herokuapp.com/
  - AngularJS Exercises
  - Travelmap
  - Postgresql with two tables
- - CV
  - Request DELETE: https://stackoverflow.com/questions/13629653/using-put-and-delete-methods-in-spring-mvc
  - Ajax to handle translation
  - Javascript google maps functionality: how far are you from groefnia?
