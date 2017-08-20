@@ -61,11 +61,8 @@
     <!-- /.container -->
     
     
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-        <p class="m-0 text-center text-white">2017</p>
-        </div>
-    </footer>
+	<!-- Footer -->
+    <%@ include file="/WEB-INF/views/common/footer.jsp"%>
+    
 </body>
 </html>
