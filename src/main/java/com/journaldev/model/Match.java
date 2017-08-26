@@ -26,7 +26,7 @@ public class Match {
 	
 	@Override
 	public String toString() {
-		return "Match [local=" + local.getGroup() + "" + local.getPosition() + ", visitor=" + visitor.getGroup() +"" +visitor.getPosition() + "]";
+		return "Match [local=" + local.getGroupChar() + "" + local.getPosition() + ", visitor=" + visitor.getGroupChar() +"" +visitor.getPosition() + "]";
 	}
 	
 }

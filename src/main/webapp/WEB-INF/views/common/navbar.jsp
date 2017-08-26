@@ -15,6 +15,15 @@
                     <a class="nav-link" href="<spring:url value ="/contact"/>">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle<%=request.getRequestURI().contains("champions") ? " active " : " " %>" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Champions League Simulator
+                        </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                        <a class="dropdown-item<%=request.getRequestURI().contains("/champions/heroku") ? " active " : " " %>" href="<spring:url value ="/champions-heroku"/>">Champions Simulator in Heroku</a>
+                        <a class="dropdown-item<%=request.getRequestURI().contains("/champions/simulator") ? " active " : " " %>" href="<spring:url value ="/champions"/>">Champions Simulator</a>
+                    </div>
+               	</li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle<%=request.getRequestURI().contains("groefnia") ? " active " : " " %>" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Groefnia
                         </a>

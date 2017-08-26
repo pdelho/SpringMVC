@@ -5,18 +5,19 @@
 This application is a cloud-enabled, mobile-ready, persistent remote storage based on Spring, which has
 
   - A Fancy frontent based on Bootstrap v4
+  - A Champions League Simulator!
+  - Coding exercises
   - A Contact Form
   - Information about myself
-  - A cool section to publicise your own country and learn naguages!
+  - A cool section of my own country and learn languages!
   - Connection to a remote database
 
 # New Features!
 
   - Bootsrap framework
-  - Small issues with context application in local/remote fixed
-  - Index page completed
   - Some jQuery exercises included
   - CV
+  - Champions League Simulator: make your own prediction about the group stage results and we will calculate how many chances has a team to face the rest of them
 
 
 You can also:
@@ -86,6 +87,7 @@ postgresql://localhost:5432/postgres
 * Execute in your database the query:
 ```sh
 initTablePersons.sql
+initTableTeams.sql
 (Optional) initData.sql
 ```
 ###### 4.2 Remote:
@@ -99,6 +101,7 @@ postgresql://host:5432/postgres?user=user&password=pass&sslmode=require
 ```sh
 heroku pg:psql
 initTablePersons.sql
+initTableTeams.sql
 (Optional) initData.sql
 ```
 ##### 5- Configure your application.properties
@@ -141,6 +144,7 @@ http://your-app-name.herokuapp.com/
  - Request DELETE: https://stackoverflow.com/questions/13629653/using-put-and-delete-methods-in-spring-mvc
  - Ajax to handle translation
  - Javascript google maps functionality: how far are you from groefnia?
+ - Images and presentations for champions league simulator
 
 
 

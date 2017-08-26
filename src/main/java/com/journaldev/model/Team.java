@@ -1,28 +1,48 @@
 package com.journaldev.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "teams")
 public class Team {
 	
-	private static int count = 0; 
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private long id;
 	
-	private int id;
-	
+	@Column(name = "name")
 	private String name;
 
-	private String group;
+	@Column(name = "groupChar")
+	private String groupChar;
 	
+	@Column(name = "position")
 	private int position;
 	
+	@Column(name = "country")
 	private String country;
 	
-	public Team (String name, String group, int position, String country){
-		this.id = ++count;
-		this.name = name;
-		this.setGroup(group);
-		this.setPosition(position);
-		this.setCountry(country);
+	@Column(name = "rating")
+	private int rating;
+	
+	public Team(){
+		
 	}
 
-	public int getId() {
+	public Team (String name, String groupChar, int position, String country, int rating){
+		this.name = name;
+		this.setGroupChar(groupChar);
+		this.setPosition(position);
+		this.setCountry(country);
+		this.rating = rating;
+	}
+
+	public long getId() {
 		return id;
 	}
 
@@ -38,12 +58,12 @@ public class Team {
 		this.name = name;
 	}
 	
-	public String getGroup() {
-		return group;
+	public String getGroupChar() {
+		return groupChar;
 	}
 
-	public void setGroup(String group) {
-		this.group = group;
+	public void setGroupChar(String groupChar) {
+		this.groupChar = groupChar;
 	}
 
 	public int getPosition() {
@@ -62,8 +82,16 @@ public class Team {
 		this.country = country;
 	}
 	
+	public int getRating() {
+		return rating;
+	}
+
+	public void setRating(int rating) {
+		this.rating = rating;
+	}
+	
 	public String toSring(){
-		return "Team id: " + this.id + ". Group: " + this.group + ". Position: " + "" + this.position;
+		return "Team id: " + this.id + ". Group: " + this.groupChar + ". Position: " + "" + this.position;
 	}
 
 

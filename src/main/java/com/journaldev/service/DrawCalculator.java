@@ -21,22 +21,22 @@ import com.journaldev.model.Team;
 public class DrawCalculator {
 
 
-	static Team A1 = new Team ("Arsenal", 			"A", 1, "en");
-	static Team A2 = new Team ("PSG", 				"A", 2, "fr");
-	static Team B1 = new Team ("Napoli",			"B", 1, "it");
-	static Team B2 = new Team ("Benfica",			"B", 2, "pt");
-	static Team C1 = new Team ("Barcelona", 		"C", 1, "es");
-	static Team C2 = new Team ("Mancheste City",	"C", 2, "en");
-	static Team D1 = new Team ("Atletico", 			"D", 1, "es");
-	static Team D2 = new Team ("Bayern Munchen",	"D", 2, "de");
-	static Team E1 = new Team ("Monaco",			"E", 1, "fr");
-	static Team E2 = new Team ("Bayer Leverkusen",	"E", 2, "de");
-	static Team F1 = new Team ("Borussia Dortmund",	"F", 1, "de");
-	static Team F2 = new Team ("Real Madrid",		"F", 2, "es");
-	static Team G1 = new Team ("Leicester",			"G", 1, "en");
-	static Team G2 = new Team ("Porto",				"G", 2, "pt");
-	static Team H1 = new Team ("Juventus",			"H", 1, "it");
-	static Team H2 = new Team ("Sevilla",			"H", 2, "es");
+	static Team A1 = new Team ("Arsenal", 			"A", 1, "en", 3);
+	static Team A2 = new Team ("PSG", 				"A", 2, "fr", 4);
+	static Team B1 = new Team ("Napoli",			"B", 1, "it", 3);
+	static Team B2 = new Team ("Benfica",			"B", 2, "pt", 2);
+	static Team C1 = new Team ("Barcelona", 		"C", 1, "es", 5);
+	static Team C2 = new Team ("Mancheste City",	"C", 2, "en", 4);
+	static Team D1 = new Team ("Atletico", 			"D", 1, "es", 4);
+	static Team D2 = new Team ("Bayern Munchen",	"D", 2, "de", 5);
+	static Team E1 = new Team ("Monaco",			"E", 1, "fr", 3);
+	static Team E2 = new Team ("Bayer Leverkusen",	"E", 2, "de", 2);
+	static Team F1 = new Team ("Borussia Dortmund",	"F", 1, "de", 4);
+	static Team F2 = new Team ("Real Madrid",		"F", 2, "es", 5);
+	static Team G1 = new Team ("Leicester",			"G", 1, "en", 2);
+	static Team G2 = new Team ("Porto",				"G", 2, "pt", 3);
+	static Team H1 = new Team ("Juventus",			"H", 1, "it", 5);
+	static Team H2 = new Team ("Sevilla",			"H", 2, "es", 3);
 
 
 	/**
@@ -104,7 +104,7 @@ public class DrawCalculator {
 				// check if teams repeated in a subset
 				if (teamsDraw.contains(local) || teamsDraw.contains(visitor)) isValid = false;
 				// check if teams are in the same group)
-				if (local.getGroup().equals(visitor.getGroup())) isValid = false;
+				if (local.getGroupChar().equals(visitor.getGroupChar())) isValid = false;
 				//check if same country countryIsValid
 				if (local.getCountry().equals(visitor.getCountry())) isValid = false;
 				teamsDraw.add(local);
@@ -158,18 +158,18 @@ public class DrawCalculator {
 		firsts.add(B1);
 		firsts.add(C1);
 		firsts.add(D1);
-		firsts.add(E1);
-		firsts.add(F1);
-		firsts.add(G1);
-		firsts.add(H1);
+		//		firsts.add(E1);
+		//		firsts.add(F1);
+		//		firsts.add(G1);
+		//		firsts.add(H1);
 		seconds.add(A2);
 		seconds.add(B2);
 		seconds.add(C2);
 		seconds.add(D2);
-		seconds.add(E2);
-		seconds.add(F2);
-		seconds.add(G2);
-		seconds.add(H2);
+		//		seconds.add(E2);
+		//		seconds.add(F2);
+		//		seconds.add(G2);
+		//		seconds.add(H2);
 		firstsAndSeconds.add(firsts);
 		firstsAndSeconds.add(seconds);
 		long stopTime = System.currentTimeMillis();
@@ -197,7 +197,7 @@ public class DrawCalculator {
 		while(matchIterator.hasNext()){
 			System.out.print("Match " + i++ + ": ");
 			Match match = matchIterator.next();
-			System.out.println(match.getLocal().getGroup() + "" + match.getLocal().getPosition() + "-" + match.getVisitor().getGroup() + "" + match.getVisitor().getPosition());
+			System.out.println(match.getLocal().getGroupChar() + "" + match.getLocal().getPosition() + "-" + match.getVisitor().getGroupChar() + "" + match.getVisitor().getPosition());
 		}
 
 		stopTime = System.currentTimeMillis();
@@ -218,7 +218,7 @@ public class DrawCalculator {
 			Iterator<Match> matchIterator2 = draw.iterator();
 			while(matchIterator2.hasNext()){
 				Match match = matchIterator2.next();
-				System.out.println(match.getLocal().getGroup() + "" + match.getLocal().getPosition() + "-" + match.getVisitor().getGroup() + "" + match.getVisitor().getPosition());
+				System.out.println(match.getLocal().getGroupChar() + "" + match.getLocal().getPosition() + "-" + match.getVisitor().getGroupChar() + "" + match.getVisitor().getPosition());
 			}
 			System.out.println("-----------");
 		}
@@ -231,12 +231,22 @@ public class DrawCalculator {
 		// id X1Y2, number
 		Map<String, Double> chances = new HashMap<String,Double>();
 		chances = calculateChances(draws);
+		
+		// Print them
 		SortedSet<String> keys = new TreeSet<String>(chances.keySet());
 		DecimalFormat df = new DecimalFormat("#.##");
+		String locals = "";
+		String visitors = "";
 		for (String key : keys){
-			System.out.println("The chances of " + key + " facing each other is: " + df.format(chances.get(key)*100/draws.size()) + "%");
+			String local = key.substring(0, key.indexOf('-'));
+			String visitor = key.substring(key.indexOf('-')+1);
+			// if the current team is not found in the locals string, add it
+			if(locals.indexOf(local) < 0) locals += local + '\n';
+			if(visitors.indexOf(visitor) < 0) visitors += visitor + '\n';
+			System.out.println("The chances of " + key + " facing each other is: " + df.format(chances.get(key)*100/draws.size()) + "% \n");
 		}
-
+		System.out.println(locals);
+		System.out.println(visitors);
 		stopTime = System.currentTimeMillis();
 		elapsedTime = stopTime - startTime;
 		System.out.println("The elapsed so fare is: " + elapsedTime/1000.0 + "s");
