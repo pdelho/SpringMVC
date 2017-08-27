@@ -59,7 +59,7 @@
 	      <hr>
 	    </div>
 	    <div class="row">
-	      <div class="col-md-12 text-center"><img src="<%=request.getContextPath()%>/resources/images/cv/profile_picture.png" class="img-responsive"></div>
+	      <%-- <div class="col-md-12 text-center"><img src="<%=request.getContextPath()%>/resources/images/cv/profile_picture.png" class="img-responsive"></div> --%>
 	      
 	        <div class="about-text">
 	        	<p>IT Professional and Telecommunication Engineer. Software Full-Stack Developer. Experience in programming languages and engineering tools. Proactive towards problem-solving</p>
