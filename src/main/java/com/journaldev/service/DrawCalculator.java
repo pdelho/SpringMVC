@@ -147,6 +147,112 @@ public class DrawCalculator {
 		return output;
 	}
 
+	public static String getTopAB(){
+		return  "The chances of Bayern Munchen-Atletico Madrid facing each other is: 18,05%<br>"+
+				"The chances of Bayern Munchen-Barcelona facing each other is: 16,85%<br>"+
+				"The chances of Bayern Munchen-Manchester City facing each other is: 16,1%<br>"+
+				"The chances of Bayern Munchen-Manchester Utd. facing each other is: 16,36%<br>"+
+				"The chances of Bayern Munchen-Porto facing each other is: 15,77%<br>"+
+				"The chances of Bayern Munchen-Sevilla facing each other is: 16,85%<br>"+
+				"The chances of Benfica-Atletico Madrid facing each other is: 17,87%<br>"+
+				"The chances of Benfica-B. Dortmund facing each other is: 17,28%<br>"+
+				"The chances of Benfica-Barcelona facing each other is: 16,85%<br>"+
+				"The chances of Benfica-Manchester City facing each other is: 15,63%<br>"+
+				"The chances of Benfica-PSG facing each other is: 15,51%<br>"+
+				"The chances of Benfica-Sevilla facing each other is: 16,85%<br>"+
+				"The chances of Chelsea-B. Dortmund facing each other is: 21,13%<br>"+
+				"The chances of Chelsea-Barcelona facing each other is: 20,52%<br>"+
+				"The chances of Chelsea-PSG facing each other is: 19,04%<br>"+
+				"The chances of Chelsea-Porto facing each other is: 18,78%<br>"+
+				"The chances of Chelsea-Sevilla facing each other is: 20,52%<br>"+
+				"The chances of Juventus-Atletico Madrid facing each other is: 15,42%<br>"+
+				"The chances of Juventus-B. Dortmund facing each other is: 14,83%<br>"+
+				"The chances of Juventus-Manchester City facing each other is: 13,85%<br>"+
+				"The chances of Juventus-Manchester Utd. facing each other is: 14,1%<br>"+
+				"The chances of Juventus-PSG facing each other is: 13,68%<br>"+
+				"The chances of Juventus-Porto facing each other is: 13,61%<br>"+
+				"The chances of Juventus-Sevilla facing each other is: 14,5%<br>"+
+				"The chances of Monaco-Atletico Madrid facing each other is: 17,91%<br>"+
+				"The chances of Monaco-B. Dortmund facing each other is: 17,09%<br>"+
+				"The chances of Monaco-Barcelona facing each other is: 16,76%<br>"+
+				"The chances of Monaco-Manchester City facing each other is: 15,63%<br>"+
+				"The chances of Monaco-Manchester Utd. facing each other is: 15,84%<br>"+
+				"The chances of Monaco-Sevilla facing each other is: 16,76%<br>"+
+				"The chances of Real Madrid-Manchester City facing each other is: 24,94%<br>"+
+				"The chances of Real Madrid-Manchester Utd. facing each other is: 25,72%<br>"+
+				"The chances of Real Madrid-PSG facing each other is: 24,54%<br>"+
+				"The chances of Real Madrid-Porto facing each other is: 24,8%<br>"+
+				"The chances of Shakhtar Donetsk-Atletico Madrid facing each other is: 15,33%<br>"+
+				"The chances of Shakhtar Donetsk-B. Dortmund facing each other is: 14,83%<br>"+
+				"The chances of Shakhtar Donetsk-Barcelona facing each other is: 14,5%<br>"+
+				"The chances of Shakhtar Donetsk-Manchester Utd. facing each other is: 13,87%<br>"+
+				"The chances of Shakhtar Donetsk-PSG facing each other is: 13,54%<br>"+
+				"The chances of Shakhtar Donetsk-Porto facing each other is: 13,42%<br>"+
+				"The chances of Shakhtar Donetsk-Sevilla facing each other is: 14,5%<br>"+
+				"The chances of Spartak Moskow-Atletico Madrid facing each other is: 15,42%<br>"+
+				"The chances of Spartak Moskow-B. Dortmund facing each other is: 14,83%<br>"+
+				"The chances of Spartak Moskow-Barcelona facing each other is: 14,5%<br>"+
+				"The chances of Spartak Moskow-Manchester City facing each other is: 13,85%<br>"+
+				"The chances of Spartak Moskow-Manchester Utd. facing each other is: 14,1%<br>"+
+				"The chances of Spartak Moskow-PSG facing each other is: 13,68%<br>"+
+				"The chances of Spartak Moskow-Porto facing each other is: 13,61%<br>";
+	}
+
+	public static String getBestRating(){
+		return  "The chances of Atletico Madrid-B. Dortmund facing each other is: 14,59%<br>"+
+				"The chances of Atletico Madrid-Juventus facing each other is: 12,68%<br>"+
+				"The chances of Atletico Madrid-Liverpool facing each other is: 16,5%<br>"+
+				"The chances of Atletico Madrid-Manchester Utd. facing each other is: 16,5%<br>"+
+				"The chances of Atletico Madrid-Monaco facing each other is: 12,68%<br>"+
+				"The chances of Atletico Madrid-Napoli facing each other is: 14,17%<br>"+
+				"The chances of Atletico Madrid-PSG facing each other is: 12,87%<br>"+
+				"The chances of Barcelona-B. Dortmund facing each other is: 13,88%<br>"+
+				"The chances of Barcelona-Chelsea facing each other is: 15,97%<br>"+
+				"The chances of Barcelona-Liverpool facing each other is: 15,97%<br>"+
+				"The chances of Barcelona-Manchester Utd. facing each other is: 15,97%<br>"+
+				"The chances of Barcelona-Monaco facing each other is: 12,16%<br>"+
+				"The chances of Barcelona-Napoli facing each other is: 13,73%<br>"+
+				"The chances of Barcelona-PSG facing each other is: 12,31%<br>"+
+				"The chances of Bayern Munchen-Chelsea facing each other is: 18,74%<br>"+
+				"The chances of Bayern Munchen-Juventus facing each other is: 13,88%<br>"+
+				"The chances of Bayern Munchen-Liverpool facing each other is: 18,74%<br>"+
+				"The chances of Bayern Munchen-Manchester Utd. facing each other is: 18,74%<br>"+
+				"The chances of Bayern Munchen-Monaco facing each other is: 13,88%<br>"+
+				"The chances of Bayern Munchen-Napoli facing each other is: 16,02%<br>"+
+				"The chances of Benfica-B. Dortmund facing each other is: 14,59%<br>"+
+				"The chances of Benfica-Chelsea facing each other is: 16,5%<br>"+
+				"The chances of Benfica-Juventus facing each other is: 12,68%<br>"+
+				"The chances of Benfica-Liverpool facing each other is: 16,5%<br>"+
+				"The chances of Benfica-Monaco facing each other is: 12,68%<br>"+
+				"The chances of Benfica-Napoli facing each other is: 14,17%<br>"+
+				"The chances of Benfica-PSG facing each other is: 12,87%<br>"+
+				"The chances of Manchester City-B. Dortmund facing each other is: 28,47%<br>"+
+				"The chances of Manchester City-Juventus facing each other is: 23,61%<br>"+
+				"The chances of Manchester City-Monaco facing each other is: 23,61%<br>"+
+				"The chances of Manchester City-PSG facing each other is: 24,32%<br>"+
+				"The chances of Porto-B. Dortmund facing each other is: 13,88%<br>"+
+				"The chances of Porto-Chelsea facing each other is: 15,97%<br>"+
+				"The chances of Porto-Juventus facing each other is: 12,16%<br>"+
+				"The chances of Porto-Liverpool facing each other is: 15,97%<br>"+
+				"The chances of Porto-Manchester Utd. facing each other is: 15,97%<br>"+
+				"The chances of Porto-Napoli facing each other is: 13,73%<br>"+
+				"The chances of Porto-PSG facing each other is: 12,31%<br>"+
+				"The chances of Real Madrid-Chelsea facing each other is: 16,31%<br>"+
+				"The chances of Real Madrid-Juventus facing each other is: 12,31%<br>"+
+				"The chances of Real Madrid-Liverpool facing each other is: 16,31%<br>"+
+				"The chances of Real Madrid-Manchester Utd. facing each other is: 16,31%<br>"+
+				"The chances of Real Madrid-Monaco facing each other is: 12,31%<br>"+
+				"The chances of Real Madrid-Napoli facing each other is: 14%<br>"+
+				"The chances of Real Madrid-PSG facing each other is: 12,45%<br>"+
+				"The chances of Sevilla-B. Dortmund facing each other is: 14,59%<br>"+
+				"The chances of Sevilla-Chelsea facing each other is: 16,5%<br>"+
+				"The chances of Sevilla-Juventus facing each other is: 12,68%<br>"+
+				"The chances of Sevilla-Manchester Utd. facing each other is: 16,5%<br>"+
+				"The chances of Sevilla-Monaco facing each other is: 12,68%<br>"+
+				"The chances of Sevilla-Napoli facing each other is: 14,17%<br>"+
+				"The chances of Sevilla-PSG facing each other is: 12,87%<br>";
+	}
+
 	public static void main(String...args){
 
 		long startTime = System.currentTimeMillis();
@@ -231,7 +337,7 @@ public class DrawCalculator {
 		// id X1Y2, number
 		Map<String, Double> chances = new HashMap<String,Double>();
 		chances = calculateChances(draws);
-		
+
 		// Print them
 		SortedSet<String> keys = new TreeSet<String>(chances.keySet());
 		DecimalFormat df = new DecimalFormat("#.##");

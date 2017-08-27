@@ -4,8 +4,8 @@ INSERT INTO persons (firstname, lastname, description, age) values('Eduardo', 'I
 INSERT INTO persons (firstname, lastname, description, age) values('Pablo', 'Molinos', 'El abuelo', 25);
 -- Init Teams
 -- A
-INSERT INTO teams (name, groupchar, position, country, rating) values('Benfica', 			'A', 1, 'pr', 2);
-INSERT INTO teams (name, groupchar, position, country, rating) values('Manchester United', 	'A', 2, 'en', 4);
+INSERT INTO teams (name, groupchar, position, country, rating) values('Benfica', 			'A', 1, 'pt', 2);
+INSERT INTO teams (name, groupchar, position, country, rating) values('Manchester Utd.', 	'A', 2, 'en', 4);
 INSERT INTO teams (name, groupchar, position, country, rating) values('Basilea', 			'A', 3, 'sw', 2);
 INSERT INTO teams (name, groupchar, position, country, rating) values('CSKA', 				'A', 4, 'ru', 1);
 -- B
@@ -40,6 +40,6 @@ INSERT INTO teams (name, groupchar, position, country, rating) values('Besiktas'
 INSERT INTO teams (name, groupchar, position, country, rating) values('Leipzig', 			'G', 4, 'de', 2);
 -- H
 INSERT INTO teams (name, groupchar, position, country, rating) values('Real Madrid', 		'H', 1, 'es', 5);
-INSERT INTO teams (name, groupchar, position, country, rating) values('Borussia Dortmund', 	'H', 2, 'de', 4);
-INSERT INTO teams (name, groupchar, position, country, rating) values('Tootenham', 			'H', 3, 'en', 3);
+INSERT INTO teams (name, groupchar, position, country, rating) values('B. Dortmund', 	'H', 2, 'de', 4);
+INSERT INTO teams (name, groupchar, position, country, rating) values('Tottenham', 			'H', 3, 'en', 3);
 INSERT INTO teams (name, groupchar, position, country, rating) values('APOEL', 				'H', 4, 'ch', 1);

@@ -16,10 +16,10 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle<%=request.getRequestURI().contains("champions") ? " active " : " " %>" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Champions League Simulator
+                            Champions League
                         </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                        <a class="dropdown-item<%=request.getRequestURI().contains("/champions/heroku") ? " active " : " " %>" href="<spring:url value ="/champions-heroku"/>">Champions Simulator in Heroku</a>
+                        <a class="dropdown-item<%=request.getRequestURI().contains("/champions/about") ? " active " : " " %>" href="<spring:url value ="/champions-about"/>">The draw</a>
                         <a class="dropdown-item<%=request.getRequestURI().contains("/champions/simulator") ? " active " : " " %>" href="<spring:url value ="/champions"/>">Champions Simulator</a>
                     </div>
                	</li>

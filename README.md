@@ -144,7 +144,6 @@ http://your-app-name.herokuapp.com/
  - Request DELETE: https://stackoverflow.com/questions/13629653/using-put-and-delete-methods-in-spring-mvc
  - Ajax to handle translation
  - Javascript google maps functionality: how far are you from groefnia?
- - Images and presentations for champions league simulator
 
 
 
