@@ -15,3 +15,7 @@
 	    <script src="<%=request.getContextPath()%>/resources/vendor/popper/popper.min.js"></script>
 	    <script src="<%=request.getContextPath()%>/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
 	    
+	    <!-- Contact form JavaScript -->
+	    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+	    <script src="<%=request.getContextPath()%>/resources/js/jqBootstrapValidation.js"></script>
+	    <script src="<%=request.getContextPath()%>/resources/js/contact_me.js"></script>

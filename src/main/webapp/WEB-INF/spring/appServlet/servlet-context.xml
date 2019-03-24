@@ -20,5 +20,12 @@
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-	<context:component-scan base-package="com.pdelho.web" />
+	
+	<!-- Entity Manager for persons -->
+	<beans:bean id="personManager" class="com.journaldev.service.SimplePersonManager"></beans:bean>
+	
+	<context:component-scan base-package="com.journaldev.web" />
+	
+	
+	
 </beans:beans>

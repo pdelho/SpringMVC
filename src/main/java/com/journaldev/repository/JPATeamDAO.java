@@ -1,4 +1,4 @@
-package com.pdelho.repository;
+package com.journaldev.repository;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.pdelho.model.Team;
+import com.journaldev.model.Team;
 
 @Repository(value = "teamDAO")
 public class JPATeamDAO implements TeamDAO {

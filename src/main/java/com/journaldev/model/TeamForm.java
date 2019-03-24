@@ -1,4 +1,4 @@
-package com.pdelho.model;
+package com.journaldev.model;
 
 import java.util.ArrayList;
 import java.util.Iterator;

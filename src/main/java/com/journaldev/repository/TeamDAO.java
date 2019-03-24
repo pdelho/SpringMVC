@@ -1,8 +1,8 @@
-package com.pdelho.repository;
+package com.journaldev.repository;
 
 import java.util.List;
 
-import com.pdelho.model.Team;
+import com.journaldev.model.Team;
 
 public interface TeamDAO {
 

@@ -1,4 +1,4 @@
-package com.pdelho.web;
+package com.journaldev.web;
 
 import java.text.DateFormat;
 import java.util.Date;
