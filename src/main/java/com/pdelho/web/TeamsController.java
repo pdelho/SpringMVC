@@ -1,4 +1,4 @@
-package com.journaldev.web;
+package com.pdelho.web;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -19,11 +19,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.google.common.collect.Lists;
-import com.journaldev.model.Match;
-import com.journaldev.model.Team;
-import com.journaldev.model.TeamForm;
-import com.journaldev.service.DrawCalculator;
-import com.journaldev.service.TeamManager;
+import com.pdelho.model.Match;
+import com.pdelho.model.Team;
+import com.pdelho.model.TeamForm;
+import com.pdelho.service.DrawCalculator;
+import com.pdelho.service.TeamManager;
 
 @Controller
 public class TeamsController {

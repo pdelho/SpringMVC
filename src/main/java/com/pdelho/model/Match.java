@@ -1,4 +1,4 @@
-package com.journaldev.model;
+package com.pdelho.model;
 
 public class Match {
 

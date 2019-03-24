@@ -1,4 +1,4 @@
-package com.journaldev.service;
+package com.pdelho.service;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -15,8 +15,8 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 import com.google.common.collect.Lists;
-import com.journaldev.model.Match;
-import com.journaldev.model.Team;
+import com.pdelho.model.Match;
+import com.pdelho.model.Team;
 
 public class DrawCalculator {
 

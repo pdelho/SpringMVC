@@ -1,4 +1,4 @@
-package com.journaldev.model;
+package com.pdelho.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

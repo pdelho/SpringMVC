@@ -1,9 +1,9 @@
-package com.journaldev.service;
+package com.pdelho.service;
 
 import java.io.Serializable;
 import java.util.List;
 
-import com.journaldev.model.Team;
+import com.pdelho.model.Team;
 
 public interface TeamManager extends Serializable{
 	

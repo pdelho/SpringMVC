@@ -1,12 +1,12 @@
-package com.journaldev.service;
+package com.pdelho.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.journaldev.model.Team;
-import com.journaldev.repository.TeamDAO;
+import com.pdelho.model.Team;
+import com.pdelho.repository.TeamDAO;
 
 @Component
 public class SimpleTeamManager implements TeamManager{

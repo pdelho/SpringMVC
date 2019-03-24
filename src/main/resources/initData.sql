@@ -1,7 +1,3 @@
--- Init Persons
-INSERT INTO persons (firstname, lastname, description, age) values('Eduardo', 'I', 'El gato', 2);
-INSERT INTO persons (firstname, lastname, description, age) values('Eduardo', 'II', 'El novio', 25);
-INSERT INTO persons (firstname, lastname, description, age) values('Pablo', 'Molinos', 'El abuelo', 25);
 -- Init Teams
 -- A
 INSERT INTO teams (name, groupchar, position, country, rating) values('Benfica', 			'A', 1, 'pt', 2);
